@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#fafafa" />
+
+    <title>Boiler</title>
+
+    <meta name="description" content="" />
+    <link rel="apple-touch-icon" href="./assets/img/icon.png" />
+    <link rel="icon" href="./assets/img/favicon.png" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/main.css.map" />
+</head>
+
+<body onload="realtimeClock()">
+    <!--clock-->
+    <div class="clock_grid ">
+        <div class="main_container">
+            <h1 class="title">DAILY  CLOCK</h1>
+            <div id="clock"></div>
+        </div>
+    </div>
+    <!--clock end-->
+
+
+
+    <!--day&night cycles-->
+    <div class="cycle">
+        <!--day-->
+        <div class="day">
+            <img src="assets/img/day.png" alt="day">
+        </div>
+        <!--day end-->
+
+        <!--night-->
+        <div class="night">
+            <img src="assets/img/night.png" alt="night">
+        </div>
+        <!--end night-->
+    </div>
+    
+    <script src="./app/main.js"></script>
+</body>
+
+</html>

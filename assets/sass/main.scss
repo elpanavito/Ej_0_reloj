@@ -1,0 +1,78 @@
+@import 'lib/vars';
+@import 'lib/mixins';
+@import 'lib/reboot';
+@import 'lib/fontawesome/font-awesome';
+@import 'lib/fontface';
+@import 'lib/keyframes';
+
+
+$_text_color: #ffffff;
+
+/*{
+  border: 1px solid red;
+  box-sizing: border-box;
+} */
+
+html, body {
+
+  margin: 0;
+  overflow: hidden;
+}
+
+
+
+.clock_grid {
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  .main_container {
+    border: 6px solid $_text_color;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 8%;
+    
+      .title {
+        font-size: 4.6rem;
+        text-align: center;
+        color: $_text_color ;
+        margin-bottom: -30px;
+      }
+
+      #clock {
+        display: flex;
+        justify-content: center;
+        font-family: 'Source Sans Pro';
+        width: 100%;
+        font-size: 4.5rem;
+        color: $_text_color;
+        padding-top: 0;
+        padding-bottom: -10px;
+      }  
+   }  
+}
+
+img {
+  z-index: 3;
+  position: relative;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.cycle {
+  .day {
+    z-index: -1;
+    background: rgb(255,141,141);
+    background: linear-gradient(180deg, rgba(255,141,141,1) 43%, rgba(238,176,88,1) 100%);
+
+  }
+  .night {
+    z-index: 1;
+    background: rgb(48,41,180);
+  background: linear-gradient(180deg, rgba(48,41,180,1) 0%, rgba(141,201,255,1) 100%);
+  }
+}
